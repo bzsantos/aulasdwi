@@ -1,0 +1,15 @@
+
+h1 {
+    color: brown;
+}
+
+p {
+    color: burlywood;
+    text-align:justify;
+    padding: 1% 2%;
+}
+
+.imagens {
+    width: 150px;
+    height: 150px;
+}
