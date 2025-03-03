@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+
+    <style>
+        .container {
+            margin-top: 25px;
+            margin-bottom: 600px;
+            border: 2px solid #760b0b;
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        .formatar{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 25px;
+        }
+        .fonte {
+            font-size: 10px;
+        }
+
+    </style>
+
+
+    <div class="container">
+        <h5>Esse é o Snoopy e o Charlie Brown</h5>
+        <div class="formatar">
+            <img src="img/snoopy.jpg" alt="Snoopy" width="200px" height="120px">
+            <p class="fonte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit, repudiandae possimus omnis dolorem eaque earum culpa, aliquam, odio sed nihil iure unde eveniet eum. Assumenda nam repellat quasi alias.</p>
+            <p class="fonte">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores odit consequuntur cupiditate aut illo sequi voluptate maxime, beatae saepe distinctio? Aut veniam sint aliquam debitis eligendi magnam facere ut? Ullam!</p>
+        </div>
+
+    </div>    
+</body>
+</html>
