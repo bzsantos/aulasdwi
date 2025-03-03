@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: brown;
+            padding: 5px;
+            grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer" ;
+            grid-template-columns: 2fr 5fr;    
+            gap:4px;        
+        }
+        .container > div {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 15px;
+        }
+        .container > div.header {
+            grid-area: header;
+        }
+        .container > div.menu {
+            grid-area: menu;
+        }
+        .container > div.content {
+            grid-area: content;
+        }
+        .container > div.footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Minha grid do CSS</h2>
+
+    <div class="container">
+        <div class="header">Header - Cabeçalho</div>
+        <div class="menu">
+            <a href="#">Link1</a><br>
+            <a href="#">Link2</a><br>
+            <a href="#">Link3</a><br>
+            <a href="#">Link4</a>
+        </div>
+        <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iure doloremque enim aperiam molestias consequatur atque explicabo ipsa, magnam, aspernatur recusandae neque. Id perferendis praesentium voluptate excepturi, quas doloribus architecto!</p></div>
+        <div class="footer">Footer - Rodapé</div>
+    </div>
+    
+</body>
+</html>
